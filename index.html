@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html ng-app="MyApp">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="styles/bootstrap.css"/>
+        <link rel="stylesheet" href="styles/main.css"/>
+
+    </head>
+    <body ng-controller="MyCtrl">
+
+        <div class="row-fluid">
+            <div class="span2">
+            <ul class="nav">
+                <li>
+                    <a href="#/">home</a>
+                </li>
+                <li>
+                    <a href="#/article/1">article 1</a>
+                </li>
+                <li>
+                    <a href="#/article/2">article 2</a>
+                </li>
+                <li>
+                    <a href="#/article/3">article 3</a>
+                </li>
+            </ul>
+            </div>
+
+            <div class="span8">
+                <!-- Add your site or application content here -->
+                <div ng-view></div>
+
+            </div>
+
+            <div class="span2">
+
+            </div>
+
+        </div>
+
+        <script src="vendor/angular.js"></script>
+        <script src="app.js"></script>
+        <script src="controllers/main.js"></script>
+        <script src="controllers/article.js"></script>
+        <!-- endbuild -->
+
+    </body>
+</html>
